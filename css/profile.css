@@ -1,0 +1,12 @@
+#profile {
+    /* centered */
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+
+    /* size */
+    max-width: 200px;
+
+    /* circule */
+    border-radius: 100%;
+}
