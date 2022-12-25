@@ -39,13 +39,116 @@
         <div class="card">
             <div class="card-body">
                 <h5 class="card-title">Sobre</h5>
-                <p class="card-text">Sou de <a href="#" data-toggle="modal" data-target="#exampleModal">Brasilia (Brasil)</a> e estudo Ciências da Computação na Univerisdade Brasília (UNB), atualmente cursando o <perido id="periodo"></perido>º periodo.</p>
+                <p class="card-text">Olá, sou de <a href="#" data-toggle="modal" data-target="#exampleModal">Brasilia (Brasil)</a> e estudo Ciências da Computação na Univerisdade Brasília (UNB), atualmente cursando o <perido id="periodo"></perido>º periodo.
+                <br>
+                Tenho mais experiência com linguagens de programação procedural e orientada a objetos, como Python e Java. Atualmente faço estagio em Administração de Bancos de Dados, mas gosto sempre de aprender e descobrir coisas novas. Por isso, tenho focado em desenvolver sistemas com varias formas de infraestruturas de TI para diversas soluções, utilizandos varias stacks.
+                </p>
             </div>
         </div>
         <div class="card">
             <div class="card-body">
                 <h5 class="card-title">Projetos</h5>
-                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores autem tenetur cum amet praesentium porro assumenda vitae expedita obcaecati, dolorum dignissimos molestiae ex consectetur, repudiandae id soluta veritatis facilis perspiciatis!</p>
+                <br>
+                <div class="carrosel card-text">
+                    <div class="row justify-content-center">
+                        <div class="col-1">
+                            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                                <span class="sr-only"></span>
+                                <img src="./img/previous_icon.svg" alt="" width="40">
+                            </a>
+                        </div>
+                        <div class="col-1">
+                            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                                <span class="sr-only"></span>
+                                <img src="./img/next_icon.svg" alt="" width="40">
+                            </a>
+                        </div>
+                    </div>
+                    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <a href="https://api-exemple.herokuapp.com/" target="__blank">
+                                            <picture>
+                                                <source media="(min-width: 800px)" srcset="./img/projectPhotos/apiexemple.png">
+                                                <source media="(min-width: 300px)" srcset="./img/projectMobilePhotos/apiexemple.jpg">
+                                                <img class="d-block w-100" src="./img/projectPhotos/apiexemple.png" alt="API exemple">
+                                            </picture>
+                                        </a>
+                                    </div>
+                                    <div class="col-12 d-flex align-items-center">
+                                        <p class=" project_description">Aplicação Web - CRUD (Create, Read, Update, and Delete) para administração de usuários cadastrados no sistema. Desenvlvido em Node.js com Express e banco de dados MongoDb.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <a href="https://teamcontrol.herokuapp.com/" target="__blank">
+                                            <picture>
+                                                <source media="(min-width: 800px)" srcset="./img/projectPhotos/teamsControl.png">
+                                                <source media="(min-width: 300px)" srcset="./img/projectMobilePhotos/teamscontrol.jpg">
+                                                <img class="d-block w-100" src="./img/projectPhotos/teamsControl.png" alt="Teams Control">
+                                            </picture>
+                                        </a>
+                                    </div>
+                                    <div class="col-12 d-flex align-items-center">
+                                        <p class=" project_description">Teams Control permite criar e administrar grupos de trabalho juntos com outros usuários, além de ter um ambiente para gerencia de projetos. Criando e atribuindo tarefas.<br>Desenvolvido em python com framework Django e banco de dados SQLite</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <a href="http://relcalculator.freevar.com/" target="__blank">
+                                            <picture>
+                                                <source media="(min-width: 800px)" srcset="./img/projectPhotos/relCalculator.png">
+                                                <source media="(min-width: 300px)" srcset="./img/projectMobilePhotos/relcalculator.jpg">
+                                                <img class="d-block w-100" src="./img/projectPhotos/relCalculator.png" alt="RelCalculator">
+                                            </picture>
+                                        </a>
+                                    </div>
+                                    <div class="col-12 d-flex align-items-center">
+                                        <p class=" project_description">RelCalculator foi desenvolvido aplicando conhecimentos compreendidos de Algebra Linear. Especificamente em propriedades de relações entre conjuntos/matrizes, como: reflexividade, simetria e transitividade.<br>Desenvolvido em PHP 7.6 e Bootstrap.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <a href="http://shirtstore.freevar.com/" target="__blank">
+                                            <picture>
+                                                <source media="(min-width: 800px)" srcset="./img/projectPhotos/ecommerce.png">
+                                                <source media="(min-width: 300px)" srcset="./img/projectMobilePhotos/ecommerce.jpg">
+                                                <img class="d-block w-100" src="./img/projectPhotos/ecommerce.png" alt="ShirtStore">
+                                            </picture>
+                                        </a>
+                                    </div>
+                                    <div class="col-12 d-flex align-items-center">
+                                        <p class=" project_description">Projeto de E-commerce, com a intenção de ser uma loja de roupas online.Desenvolvido em PHP 7.6 com banco de dados MySQL.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <a href="https://github.com/oseias-romeiro/EmployeeMangement" target="__blank">
+                                            <picture>
+                                                <source media="(min-width: 800px)" srcset="./img/projectPhotos/EmployeeMangement.png">
+                                                <!--<source media="(min-width: 300px)" srcset="./img/projectMobilePhotos/EmployeeMangement.png">-->
+                                                <img class="d-block w-100" src="./img/projectPhotos/EmployeeMangement.png" alt="ShirtStore">
+                                            </picture>
+                                        </a>
+                                    </div>
+                                    <div class="col-12 d-flex align-items-center">
+                                        <p class=" project_description">Programa para computador desktop linux/windows/mac, como funcionalidade de ponto eletrônico para funcionarios e administração com criação de relatórios e controle de dados;<br>Desenvolido em Java com Swing e banco de dados PostgreSQL.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
         
@@ -69,19 +172,19 @@
         </div>
     </div>
 
-    <footer class="text-center" style="background-color: rgba(0, 0, 0, 0.089);">
+    <footer class="text-center" style="background-color: rgba(0, 0, 0, 0.096);">
         <br>
         <div>
-            <a href="https://www.linkedin.com/in/oseias-romeiro" style="color: white; margin: 10px;">
+            <a class="contact_link" href="https://www.linkedin.com/in/oseias-romeiro" style="color: white; margin: 10px;">
                 <img src="https://static.licdn.com/scds/common/u/images/logos/favicons/v1/favicon.ico" alt="linkedin" style="width: 30px;">
             </a>
-            <a href="https://www.github.com/oseias-romeiro" style="color: white; margin: 10px;">
+            <a class="contact_link" href="https://www.github.com/oseias-romeiro" style="color: white; margin: 10px;">
                 <img src="https://github.githubassets.com/favicons/favicon.png" alt="github" style="width: 30px; background-color: black; border-radius: 100%;">
             </a>
-            <a href="mailto:oseiasromeirom+gitio@gmail.com" style="color: white; margin: 10px;">
+            <a class="contact_link" href="mailto:oseiasromeirom+gitio@gmail.com" style="color: white; margin: 10px;">
                 <img src="https://ssl.gstatic.com/ui/v1/icons/mail/rfr/gmail.ico" alt="email" style="width: 30px;">
             </a>
-            <a href="https://www.instagram.com/__oseias/" style="color: white; margin: 10px;">
+            <a class="contact_link" href="https://www.instagram.com/__oseias/" style="color: white; margin: 10px;">
                 <img src="https://static.cdninstagram.com/rsrc.php/yv/r/BTPhT6yIYfq.ico" alt="email" style="width: 30px;">
             </a>
         </div>
