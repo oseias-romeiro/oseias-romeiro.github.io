@@ -8,90 +8,44 @@
 
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
-
-    <link rel="stylesheet" href="css/profile.css">
-    <link rel="stylesheet" href="css/style.css">
-    <script src="js/code.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <a class="navbar-brand" href="#">Oseias Romeiro</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-            <div class="navbar-nav">
-                <a class="nav-item nav-link text-success" href="/">Home</a>
-                <a class="nav-item nav-link text-success" href="https://github.com/oseias-romeiro/Theory_Applications_Graphs">Theory and Application of Graphs</a>
-            </div>
+<body class="bg-black text-white">
+    <nav class="p-4">
+        <div class="container mx-auto flex items-center">
+            <div class="text-white font-bold text-xl">Oseias Romeiro</div>
+            <ul class="flex space-x-4 px-4">
+                <li><a class="text-white hover:text-blue-300" href="/">Home</a></li>
+            </ul>
         </div>
     </nav>
-    <br>
-    <div class="container">
-        <div class="text-center">
-            <img class="card-img-top" id="profile" src="img/profile.webp" alt="profile photo">
-            <div class="card-body">
-                <h5 class="card-title">Oseias Romeiro</h5>
-                <p class="card-text">Estudante de Ciências da Computação</p>
+
+    <main class="container mx-auto p-8">
+        <div class="flex justify-center">
+            <img class=" rounded-full w-20 h-20" src="img/profile.webp" alt="profile photo">
+            <div class="px-4">
+                <h2 class="text-xl">Oseias Romeiro</h2>
+                <p>Estudante de Ciências da Computação</p>
             </div>
         </div>
-        <div class="card">
-            <div class="card-body">
-                <h5 class="card-title">Sobre</h5>
-                <p class="card-text">Olá, sou de <a href="#" data-toggle="modal" data-target="#exampleModal">Brasilia (Brasil)</a> e estudo Ciências da Computação na Univerisdade Brasília (UNB), atualmente cursando o <perido id="periodo"></perido>º periodo.
-                <br>
-                Tenho mais experiência com linguagens de programação procedural e orientada a objetos, como Python e Java. Atualmente faço estagio em Administração de Bancos de Dados, mas gosto sempre de aprender e descobrir coisas novas. Por isso, tenho focado em desenvolver sistemas com varias formas de infraestruturas de TI para diversas soluções, utilizandos varias stacks.
-                </p>
-            </div>
-        </div>
-        <div class="card">
-            <div class="card-body">
-                <h5 class="card-title">Projetos</h5>
-            </div>
-        </div>
-        
+        <br>
+        <h2 class="text-xl underline">Sobre</h2>
+        <p>Olá, sou estudante de Ciências da Computação na UNB (Univerisdade de Brasília). Atualmente faço estágio de Administração de Bancos de Dados com foco em bancos Postgres e Oracle, além de automação e Administração de Sistema Operacional (Oracle Linux).
+        </p>
+        <p>Também tenho experiência com desenvolvimento de sistemas com as linguagens Python, JavaScript, PHP, C/C++ e Java. Com maior foco em desenvolvimento web com Python usando as frameworks Flask e Django com React e Bootstrap.</p>
+        <p>Além da utilziação de ferramentas de versionamento como Git e containerização e automação com Docker, Kubernets, Ansible e AWX</p>
+        <br>
+        <h2 class="text-xl underline">Projetos</h2>
         <p></p>
-    </div>
+    </main>
 
-    <!--modal map-->
-    <div class="modal fade bd-example-modal-lg" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-lg" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Brasilia-DF</h5>
-                    <button type="button" class="btn btn-danger" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d245795.56223214406!2d-48.07744425021936!3d-15.721717482157736!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x935a3d18df9ae275%3A0x738470e469754a24!2sBras%C3%ADlia%20-%20Brasilia%2C%20Federal%20District!5e0!3m2!1sen!2sbr!4v1646017247232!5m2!1sen!2sbr" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <footer class="text-center fixed-bottom" style="background-color: rgba(0, 0, 0, 0.096);">
-        <br>
-        <div>
-            <a class="contact_link" href="https://www.linkedin.com/in/oseias-romeiro" style="color: white; margin: 10px;">
-                <img src="https://static.licdn.com/scds/common/u/images/logos/favicons/v1/favicon.ico" alt="linkedin" style="width: 30px;">
-            </a>
-            <a class="contact_link" href="https://www.github.com/oseias-romeiro" style="color: white; margin: 10px;">
-                <img src="https://github.githubassets.com/favicons/favicon.png" alt="github" style="width: 30px; background-color: black; border-radius: 100%;">
-            </a>
-            <a class="contact_link" href="mailto:oseiasromeirom+gitio@gmail.com" style="color: white; margin: 10px;">
-                <img src="https://ssl.gstatic.com/ui/v1/icons/mail/rfr/gmail.ico" alt="email" style="width: 30px;">
-            </a>
-            <a class="contact_link" href="https://www.instagram.com/__oseias/" style="color: white; margin: 10px;">
-                <img src="https://static.cdninstagram.com/rsrc.php/yv/r/BTPhT6yIYfq.ico" alt="email" style="width: 30px;">
-            </a>
-        </div>
-        <br>
+    <footer class="bg-black">
+        <ul class="flex justify-center space-x-4 p-4">
+            <li class="px-4"><a href="https://www.linkedin.com/in/oseias-romeiro"><img src="https://static.licdn.com/scds/common/u/images/logos/favicons/v1/favicon.ico" alt="linkedin" class="w-8 h-8"></a></li>
+            <li class="px-4"><a href="https://www.github.com/oseias-romeiro"><img src="https://github.githubassets.com/favicons/favicon.png" alt="github" class="w-8 h-8"></a></li>
+            <li class="px-4"><a href="mailto:oseiasromeirom+gitio@gmail.com"><img src="https://ssl.gstatic.com/ui/v1/icons/mail/rfr/gmail.ico" alt="email" class="w-8 h-8"></a></li>
+            <li class="px-4"><a href="https://www.instagram.com/__oseias/"><img src="https://static.cdninstagram.com/rsrc.php/yv/r/BTPhT6yIYfq.ico" alt="email" class="w-8 h-8"></a></li>
+        </ul>
     </footer>
-
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js" integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2" crossorigin="anonymous"></script>
 </body>
 </html>
