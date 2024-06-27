@@ -14,34 +14,34 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="bg-black text-white">
-    <nav class="p-4" style="background-color: rgb(38, 38, 38);">
-        <div class="container mx-auto flex items-center">
-            <div class="text-white font-bold text-2xl sm:text-4xl">Oseias Romeiro</div>
-            <ul class="flex space-x-4 px-4">
-                <li><a class="text-white hover:text-blue-300" href="/">Home</a></li>
-            </ul>
-        </div>
-    </nav>
 
-    <div class="flex flex-col items-center justify-center sm:pt-20 sm:pb-20">
-        <img class="rounded-full max-w-[200px] h-auto mb-4" src="img/profile.jpeg" alt="profile photo">
-        <div class="text-center">
-            <h1 class="text-3xl sm:text-6xl">Oseias Romeiro</h1>
-            <p class="text-sm sm:text-base mt-2">Desenvolvedor de Softwares e estudante de Ciências da Computação</p>
-        </div>
-    </div>
-    <div class="flex justify-center pb-10 mt-10">
-        <div class="w-full sm:w-1/2 text-justify">
-            <h2 class="text-2xl sm:text-4xl pb-4 text-center">Sobre</h2>
-            <p class="text-sm sm:text-base p-4">Olá, me chamo Oseias e estou atualmente estudando Ciências da Computação na Universidade de Brasília. Além disso atuo com desenvolvimento de softwares com expertise em aplicações web (especialmente em backend, APIs e integrações) e em aplicações mobile híbridas e nativas. Também tenho expertise em Automação, Banco de dados e Ambiente em Nuvem. Estou empenhado e comprometido em busca de sempre contribuir para melhores soluções e boas práticas na computação.</p>
-        </div>
-    </div>
+    <main style="height: calc(100vh - 70px);">
+        <nav class="p-4" style="background-color: rgb(38, 38, 38);">
+            <div class="container mx-auto flex items-center">
+                <div class="text-white font-bold text-2xl sm:text-4xl">Oseias Romeiro</div>
+                <ul class="flex space-x-4 px-4">
+                    <li><a class="text-white hover:text-blue-300" href="/">Home</a></li>
+                </ul>
+                <div class="ml-auto">
+                    <button id="themeToggle" data-theme="dark"></button>
+                </div>
+            </div>
+        </nav>
 
-    <div class="flex flex-col items-center justify-center pb-10">
-        <h2 class="text-2xl sm:text-4xl pb-3">Projetos</h2>
-        
-    </div>
-
+        <div class="flex flex-col items-center justify-center sm:pt-20 sm:pb-20 mt-5">
+            <img class="rounded-full max-w-[200px] h-auto mb-4" src="img/profile.jpeg" alt="profile photo">
+            <div class="text-center">
+                <h1 class="text-3xl sm:text-6xl">Oseias Romeiro</h1>
+                <p class="text-sm sm:text-base mt-2">Desenvolvedor de Softwares e estudante de Ciências da Computação</p>
+            </div>
+        </div>
+        <div class="flex justify-center pb-10 mt-10">
+            <div class="w-full sm:w-1/2 text-justify">
+                <h2 class="text-2xl sm:text-4xl pb-4 text-center">Sobre</h2>
+                <p class="text-sm sm:text-base p-4">Olá, meu nome é Oseias e estou atualmente cursando Ciências da Computação na Universidade de Brasília. Atuo como desenvolvedor de software, com especialização em aplicações web, especialmente no backend, APIs e integrações. Além disso, tenho experiência no desenvolvimento de aplicações mobile híbridas e nativas.<br>Possuo também conhecimentos sólidos em Automação, Banco de Dados e Ambientes em Nuvem. Sou dedicado e comprometido em contribuir para a criação de soluções inovadoras e na adoção de melhores práticas na computação.</p>
+            </div>
+        </div>
+    </main>
     <footer style="background-color: rgb(38, 38, 38);">
         <ul class="flex justify-center space-x-4 p-4">
             <li class="px-4"><a href="https://www.linkedin.com/in/oseias-romeiro"><img src="https://static.licdn.com/scds/common/u/images/logos/favicons/v1/favicon.ico" alt="linkedin" class="w-10 h-10"></a></li>
@@ -49,5 +49,7 @@
             <li class="px-4"><a href="mailto:oseiasromeirom+gitio@gmail.com"><img src="https://ssl.gstatic.com/ui/v1/icons/mail/rfr/gmail.ico" alt="email" class="w-10 h-10"></a></li>
         </ul>
     </footer>
+
+    <script src="js/theme.js"></script>
 </body>
 </html>
