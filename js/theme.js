@@ -14,11 +14,11 @@ themeToggle.addEventListener('click', ()=>{
         themeToggle.innerHTML = darkTheme;
         themeToggle.attributes['data-theme'].value = 'light';
         currentTheme = 'light';
-        document.getElementsByTagName('body')[0].className = 'bg-white text-black';
+        document.getElementsByTagName('body')[0].className = 'flex flex-col h-screen justify-between bg-white text-black';
     } else {
         themeToggle.innerHTML = lightTheme;
         themeToggle.attributes['data-theme'].value = 'dark';
         currentTheme = 'dark';
-        document.getElementsByTagName('body')[0].className = 'bg-black text-white';
+        document.getElementsByTagName('body')[0].className = 'flex flex-col h-screen justify-between bg-black text-white';
     }
 });
