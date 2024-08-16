@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="keywords" content="Oseias, Romeiro, Magalhaes, Magalhães, Oseias-Romeiro-Magalhaes, Oseias-Romeiro-Magalhães, Portfolio, Portfólio, Perfil, Projetos, Ciencias-da-Computacao, Ciências-da-Computação, Computacao, Computação, Software, Programador, Programacao, Programação, Desenvolvedor, Web, Mobile, Python, JavaScript, Java, Linux, Windows, Server, Automacao, Automação, Ansible, AWX, Banco-de-dados, DataBase, DB, BD, Administração, Integracao, Integração, Backend, Back-end, Cloud, Nuvem, API">
+    <meta name="google-site-verification" content="_vJftw34mQuip4c-yM8RZ_ZuDTeuqfLvmSqk4VJjoMc" />
+    <title>Buy Me A Coffe</title>
+
+    <link rel="shortcut icon" href="img/profile.jpeg" type="image/jpeg">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body onload="onBodyLoad()" class="flex flex-col h-screen justify-between bg-black text-white">
+
+    <div id="thanksModal" hidden>
+        <div class="flex flex-col items-center justify-center h-screen">
+            <h1 class="text-3xl sm:text-4xl mb-3">Thank you for your support!</h1>
+            <p class="max-w-lg mb-2">Your contribution is very important to me. I hope you enjoy my work and that it is useful to you.</p>
+            <button class="bg-blue-500 hover:bg-blue-700 font-bold rounded px-4 py-2" onclick="closeThanksModal()">Close</button>
+        </div>
+    </div>
+
+    <div class="flex flex-col items-center justify-center sm:pt-20 sm:pb-20 mt-5">
+        <h1 class="text-3xl sm:text-4xl mb-3">Oseias Romeiro</h1>
+        
+        <p class="max-w-lg m-2 text-center">I hope my work is having recognizing. Help me to continue creating usefull applications and colaborating with good practices in software development.</p>
+        
+        <button class="bg-blue-500 hover:bg-blue-700 font-bold rounded px-4 py-2 flex flex-row items-center" onclick="createCheckout()">
+            <p>Buy Me A Coffe</p>
+            <br>
+            <img class="align-self-center ml-2" src="img/icons/coffe.png" width="40" alt="coffe image">
+        </button>
+        
+        <ul class="flex justify-center space-x-4 p-4 mt-4">
+            <li class="px-4"><a href="https://www.linkedin.com/in/oseias-romeiro"><img src="img/icons/linkedin.ico" alt="linkedin" class="w-10 h-10"></a></li>
+            <li class="px-4"><a href="https://www.github.com/oseias-romeiro"><img src="img/icons/github.png" alt="github" class="w-10 h-10 rounded-full"></a></li>
+            <li class="px-4"><a href="mailto:oseiasromeirom+gitio@gmail.com"><img src="img/icons/gmail.ico" alt="email" class="w-10 h-10"></a></li>
+        </ul>
+    </div>
+
+    <span id="keywords" hidden="true">Oseias, Romeiro, Magalhaes, Magalhães, Oseias-Romeiro-Magalhaes, Oseias-Romeiro-Magalhães, Portfolio, Portfólio, Perfil, Projetos, Ciencias-da-Computacao, Ciências-da-Computação, Computacao, Computação, Software, Programador, Programacao, Programação, Desenvolvedor, Web, Mobile, Python, JavaScript, Java, Linux, Windows, Server, Automacao, Automação, Ansible, AWX, Banco-de-dados, DataBase, DB, BD, Administração, Integracao, Integração, Backend, Back-end, Cloud, Nuvem, API</span>
+
+    <script src="js/generateID.js"></script>
+    <script src="js/pagbank.js"></script>
+    <script src="js/theme.js"></script>
+    
+</body>
+</html>
