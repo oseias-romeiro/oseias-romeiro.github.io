@@ -1,14 +1,20 @@
 
 document.getElementById("jsneedMSG").style.display = "none";
 
-const lang = navigator.language.split('-')[0] === "pt" ? "pt" : "en";
+let lang = getCookie("lang");
+if (!lang) {
+    lang = navigator.language.split('-')[0] === "pt" ? "pt" : "en";
+    setCookie("lang", lang, 30);
+}
+
 const langToggle = document.querySelector('#langToggle');
 langToggle.attributes['lang-theme'].value = lang;
 
 changeLanguage(lang);
 
 langToggle.addEventListener('click', () => {
-    const lang = langToggle.attributes['lang-theme'].value === 'pt' ? 'en' : 'pt';
+    lang = langToggle.attributes['lang-theme'].value === 'pt' ? 'en' : 'pt';
     langToggle.attributes['lang-theme'].value = lang;
+    setCookie("lang", lang, 30);
     changeLanguage(lang);
 });
