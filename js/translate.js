@@ -1,6 +1,9 @@
 
 const setContent = (content) => {
+    document.getElementById("navbar-item1").innerText = content["navbar-item1"];
+    document.getElementById("navbar-item2").innerText = content["navbar-item2"];
     document.getElementById("short-description").innerText = content["short-description"];
+    document.getElementById("whatsapp-link").setAttribute('data-text', content["whatsapp-link"]);
     document.getElementById("about").innerText = content["about"];
     document.getElementById("about-description").innerHTML = content["about-description"];
     document.getElementById("xp").innerText = content["xp"];
@@ -25,7 +28,7 @@ const changeLanguage = (lang) => {
             return res.json();
         })
         .then(content => {
-            sessionStorage.setItem(`lang-${lang}`, JSON.stringify(content)); 
+            sessionStorage.setItem(`lang-${lang}`, JSON.stringify(content));
             setContent(content);
         })
         .catch(err => {

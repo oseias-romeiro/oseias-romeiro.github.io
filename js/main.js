@@ -1,4 +1,3 @@
-
 document.getElementById("jsneedMSG").style.display = "none";
 
 let lang = getCookie("lang");

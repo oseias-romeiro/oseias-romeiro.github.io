@@ -15,5 +15,5 @@ body {
     }
 }
 .animate-glow {
-    animation: glow 4s ease-in-out infinite;
+    animation: glow 3s ease-in-out infinite;
 }
