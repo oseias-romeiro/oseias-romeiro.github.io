@@ -10,39 +10,68 @@
     <title>Oseias Romeiro Magalhães</title>
 
     <link rel="shortcut icon" href="img/profile.png" type="image/png">
-
+    <link rel="stylesheet" href="index.css">
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="flex flex-col h-screen justify-between bg-black text-white">
+<body class="flex flex-col h-screen justify-between bg-black text-gray-200">
 
-    <nav class="p-4" style="background-color: rgb(38, 38, 38);">
+    <nav class="p-4">
         <div class="container mx-auto flex items-center">
-            <div class="text-white font-bold text-2xl sm:text-4xl">Oseias Romeiro</div>
-            <ul class="flex space-x-4 px-4">
-                <li><a class="text-white hover:text-blue-300" href="/">Home</a></li>
-                <li><a class="text-white hover:text-blue-300" href="#">Projects</a></li>
+            <div class="font-bold text-2xl sm:text-4xl">Oseias Romeiro</div>
+            
+            <ul class="ml-4 pt-3 flex space-x-4 px-4">
+                <li><a class="hover:text-blue-400" href="/">Home</a></li>
+                <li><a class="hover:text-blue-400" href="#">Projects</a></li>
             </ul>
-            <div class="ml-auto">
-                <button id="langToggle" class="w-8 h-8 m-1" lang-theme=""><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><path fill="#ffffff" d="M0 128C0 92.7 28.7 64 64 64l192 0 48 0 16 0 256 0c35.3 0 64 28.7 64 64l0 256c0 35.3-28.7 64-64 64l-256 0-16 0-48 0L64 448c-35.3 0-64-28.7-64-64L0 128zm320 0l0 256 256 0 0-256-256 0zM178.3 175.9c-3.2-7.2-10.4-11.9-18.3-11.9s-15.1 4.7-18.3 11.9l-64 144c-4.5 10.1 .1 21.9 10.2 26.4s21.9-.1 26.4-10.2l8.9-20.1 73.6 0 8.9 20.1c4.5 10.1 16.3 14.6 26.4 10.2s14.6-16.3 10.2-26.4l-64-144zM160 233.2L179 276l-38 0 19-42.8zM448 164c11 0 20 9 20 20l0 4 44 0 16 0c11 0 20 9 20 20s-9 20-20 20l-2 0-1.6 4.5c-8.9 24.4-22.4 46.6-39.6 65.4c.9 .6 1.8 1.1 2.7 1.6l18.9 11.3c9.5 5.7 12.5 18 6.9 27.4s-18 12.5-27.4 6.9l-18.9-11.3c-4.5-2.7-8.8-5.5-13.1-8.5c-10.6 7.5-21.9 14-34 19.4l-3.6 1.6c-10.1 4.5-21.9-.1-26.4-10.2s.1-21.9 10.2-26.4l3.6-1.6c6.4-2.9 12.6-6.1 18.5-9.8l-12.2-12.2c-7.8-7.8-7.8-20.5 0-28.3s20.5-7.8 28.3 0l14.6 14.6 .5 .5c12.4-13.1 22.5-28.3 29.8-45L448 228l-72 0c-11 0-20-9-20-20s9-20 20-20l52 0 0-4c0-11 9-20 20-20z"/></svg></button>
-                <button id="themeToggle" data-theme="dark"></button>
+
+            <div class="ml-auto p-2 bg-gray-900/50 backdrop-blur-md rounded-xl shadow-md hover:bg-gray-800/70 transition flex items-center space-x-3">
+                <button id="langToggle" class="w-8 h-8" lang-theme="">
+                    <img src="img/icons/translate.svg" alt="translate">
+                </button>
+
+                <div class="w-px h-6 bg-gray-400"></div>
+                
+                <button id="themeToggle" data-theme="dark" class="w-8 h-8"></button>
             </div>
         </div>
     </nav>
 
     <div id="jsneedMSG" class="flex justify-center mt-10">
-        <div class="p-4 mb-4 text-sm rounded-lg bg-gray-800 text-white" role="alert">This page needs Javascript to work properly!</div>
+        <div class="p-4 mb-4 text-sm rounded-lg bg-gray-900 text-gray-200" role="alert">This page needs Javascript to work properly!</div>
     </div>
 
     <div id="loading" class="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 z-50">
         <img src="img/loading.gif" class="w-16 h-16 animate-pulse">
     </div>
 
-
     <div class="flex flex-col items-center justify-center sm:pt-20 sm:pb-20 mt-5">
-        <img class="rounded-full max-w-[200px] h-auto mb-4" src="img/profile.png" alt="profile photo">
+        <div class="relative w-40 h-40 mx-auto mb-4">
+            <div class="absolute inset-0 rounded-full bg-gradient-to-r from-blue-900 via-blue-800 to-blue-900 blur-3xl animate-glow"></div>
+            <img src="img/profile.png" class="relative w-40 h-40 rounded-full object-cover" alt="Perfil">
+        </div>
         <div class="text-center">
             <h1 class="text-3xl sm:text-6xl">Oseias Romeiro</h1>
             <p id="short-description" class="text-sm sm:text-base mt-2"></p>
+            <div class="m-5 h-[3px] bg-gradient-to-r from-transparent via-gray-400 to-transparent"></div>
+            <ul class="flex justify-center space-x-4 p-4">
+                <li class="px-4 py-3 bg-gray-900/50 backdrop-blur-md rounded-xl shadow-md hover:bg-gray-800/70 transition"><a href="https://www.linkedin.com/in/oseias-romeiro">
+                    <img src="img/icons/linkedin.svg" alt="linkedin" class="w-10 h-10">
+                </a></li>
+                <li class="px-4 py-3 bg-gray-900/50 backdrop-blur-md rounded-xl shadow-md hover:bg-gray-800/70 transition"><a href="https://www.github.com/oseias-romeiro">
+                    <img src="img/icons/github.svg" alt="github" class="w-10 h-10 rounded-full">
+                </a></li>
+                <li class="px-4 py-3 bg-gray-900/50 backdrop-blur-md rounded-xl shadow-md hover:bg-gray-800/70 transition">
+                    <a href="mailto:romeiro.osea+portfolio@gmail.com">
+                      <img src="img/icons/email.svg" alt="email" class="w-10 h-10">
+                    </a>
+                </li>
+                <li class="px-4 py-3 bg-gray-900/50 backdrop-blur-md rounded-xl shadow-md hover:bg-gray-800/70 transition">
+                    <a href="">
+                      <img src="img/icons/whatsapp.svg" alt="whatsapp" class="w-10 h-10">
+                    </a>
+                </li>
+            </ul>
+            <div class="mt-5 h-[3px] bg-gradient-to-r from-transparent via-gray-400 to-transparent"></div>
         </div>
     </div>
     <div class="flex justify-center pb-10 mt-10">
@@ -56,15 +85,6 @@
     </div>
 
     <span id="keywords" hidden="true">Oseias, Romeiro, Magalhaes, Magalhães, Oseias-Romeiro-Magalhaes, Oseias-Romeiro-Magalhães, Portfolio, Portfólio, Perfil, Projetos, Ciencias-da-Computacao, Ciências-da-Computação, Computacao, Computação, Software, Programador, Programacao, Programação, Desenvolvedor, Web, Mobile, Python, JavaScript, Java, Linux, Windows, Server, Automacao, Automação, Ansible, AWX, Banco-de-dados, DataBase, DB, BD, Administração, Integracao, Integração, Backend, Back-end, Cloud, Nuvem, API</span>
-
-    <footer style="background-color: rgb(38, 38, 38);">
-        <ul class="flex justify-center space-x-4 p-4">
-            <li class="px-4"><a href="https://www.linkedin.com/in/oseias-romeiro"><img src="img/icons/linkedin.ico" alt="linkedin" class="w-10 h-10"></a></li>
-            <li class="px-4"><a href="https://www.github.com/oseias-romeiro"><img src="img/icons/github.png" alt="github" class="w-10 h-10 rounded-full"></a></li>
-            <li class="px-4"><a href="mailto:oseiasromeirom+gitio@gmail.com"><img src="img/icons/gmail.ico" alt="email" class="w-10 h-10"></a></li>
-            <li class="px-4"><a href="https://br.fiverr.com/hoshearomero"><img src="img/icons/fiverr.webp" alt="Fiverr" class="w-10 h-10 rounded"></a></li>
-        </ul>
-    </footer>
     
     <script src="js/theme.js"></script>
     <script src="js/translate.js"></script>
