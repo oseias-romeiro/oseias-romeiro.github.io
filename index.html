@@ -13,7 +13,21 @@
     <link rel="stylesheet" href="index.css">
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="flex flex-col h-screen justify-between bg-black text-gray-200">
+<body class="flex flex-col h-screen justify-between text-gray-200">
+
+    <div id="popup" class="fixed inset-0 z-50 bg-black/50 backdrop-blur-sm flex items-center justify-center">
+        <div class="bg-gradient-to-b from-gray-900/90 to-gray-800/80 dark:from-gray-900/90 dark:to-gray-800/80 light:from-white/90 light:to-gray-100/80 rounded-2xl shadow-2xl p-6 w-11/12 max-w-md relative">
+          
+            <button id="popup-closeBtn" class="absolute top-3 right-3 text-gray-400 hover:text-white transition">✕</button>
+
+            <h2 id="popup-title" class="text-xl font-semibold text-white dark:text-white light:text-gray-900 mb-3">Error</h2>
+            <p id="popup-message" class="text-gray-300 dark:text-gray-300 light:text-gray-700">This page needs Javascript to work properly!</p>
+        </div>
+    </div>
+
+    <div id="loading" class="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 z-50">
+        <img src="img/loading.gif" class="w-16 h-16 animate-pulse">
+    </div>
 
     <nav class="p-4">
         <div class="container mx-auto flex items-center">
@@ -25,24 +39,20 @@
             </ul>
 
             <div class="ml-auto p-2 bg-gray-900/50 backdrop-blur-md rounded-xl shadow-md hover:bg-gray-800/70 transition flex items-center space-x-3">
-                <button id="langToggle" class="w-8 h-8" lang-theme="">
+                <button id="langToggle" class="w-8 h-8 group" lang-theme="">
                     <img src="img/icons/translate.svg" alt="translate">
+                    <span id="tooltip-translate" class="absolute left-1/2 top-full mt-2 -translate-x-1/2 whitespace-nowrap px-2 py-1 text-sm rounded bg-gray-900 text-white shadow-lg opacity-0 scale-95 transform transition-all duration-150 pointer-events-none group-hover:opacity-100 group-hover:scale-100"></span>
                 </button>
 
                 <div class="w-px h-6 bg-gray-400"></div>
                 
-                <button id="themeToggle" data-theme="dark" class="w-8 h-8"></button>
+                <button id="themeToggle" data-theme="dark" class="w-8 h-8 group">
+                    <img src="" class="w-7 h-7">
+                    <span id="tooltip-theme" class="absolute left-1/2 top-full mt-2 -translate-x-1/2 whitespace-nowrap px-2 py-1 text-sm rounded bg-gray-900 text-white shadow-lg opacity-0 scale-95 transform transition-all duration-150 pointer-events-none group-hover:opacity-100 group-hover:scale-100"></span>
+                </button>
             </div>
         </div>
     </nav>
-
-    <div id="jsneedMSG" class="flex justify-center mt-10">
-        <div class="p-4 mb-4 text-sm rounded-lg bg-gray-900 text-gray-200" role="alert">This page needs Javascript to work properly!</div>
-    </div>
-
-    <div id="loading" class="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 z-50">
-        <img src="img/loading.gif" class="w-16 h-16 animate-pulse">
-    </div>
 
     <div class="flex flex-col items-center justify-center sm:pt-20 sm:pb-20 mt-5">
         <div class="relative w-500 h-500 mx-auto mb-4">
@@ -61,9 +71,11 @@
                         <img src="img/icons/linkedin.svg" alt="linkedin" class="w-10 h-10">
                     </a>
                 </li>
-                <li class="px-4 py-3 bg-gray-900/50 backdrop-blur-md rounded-xl shadow-md hover:bg-gray-800/70 transition"><a href="https://www.github.com/oseias-romeiro">
-                    <img src="img/icons/github.svg" alt="github" class="w-10 h-10 rounded-full">
-                </a></li>
+                <li class="px-4 py-3 bg-gray-900/50 backdrop-blur-md rounded-xl shadow-md hover:bg-gray-800/70 transition">
+                    <a href="https://www.github.com/oseias-romeiro">
+                        <img src="img/icons/github.svg" alt="github" class="w-10 h-10 rounded-full">
+                    </a>
+                </li>
                 <li class="px-4 py-3 bg-gray-900/50 backdrop-blur-md rounded-xl shadow-md hover:bg-gray-800/70 transition">
                     <a href="mailto:romeiro.osea+portfolio@gmail.com">
                         <img src="img/icons/email.svg" alt="email" class="w-10 h-10">
@@ -91,6 +103,7 @@
 
     <span id="keywords" hidden="true">Oseias, Romeiro, Magalhaes, Magalhães, Oseias-Romeiro-Magalhaes, Oseias-Romeiro-Magalhães, Portfolio, Portfólio, Perfil, Projetos, Ciencias-da-Computacao, Ciências-da-Computação, Computacao, Computação, Software, Programador, Programacao, Programação, Desenvolvedor, Web, Mobile, Python, JavaScript, Java, Linux, Windows, Server, Automacao, Automação, Ansible, AWX, Banco-de-dados, DataBase, DB, BD, Administração, Integracao, Integração, Backend, Back-end, Cloud, Nuvem, API</span>
     
+    <script src="js/popup.js"></script>
     <script src="js/cookies.js"></script>
     <script src="js/theme.js"></script>
     <script src="js/translate.js"></script>

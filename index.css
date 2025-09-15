@@ -4,14 +4,14 @@ body {
 
 @keyframes glow {
     0%, 100% {
-      opacity: 0.3;
-      transform: scale(1);
-      filter: blur(30px);
+        opacity: 0.3;
+        transform: scale(1);
+        filter: blur(30px);
     }
     50% {
-      opacity: 0.6;
-      transform: scale(1.05);
-      filter: blur(40px);
+        opacity: 0.6;
+        transform: scale(1.05);
+        filter: blur(40px);
     }
 }
 .animate-glow {

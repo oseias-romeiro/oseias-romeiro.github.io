@@ -1,10 +1,12 @@
 {
     "navbar-item1": "Home",
-    "navbar-item2": "Projects",
+    "navbar-item2": {"text": "Projects", "popup-title": "Building...", "popup-message": "I'm working on it ;)"},
+    "tooltips": {"translate": "Translate to portugues", "theme": "Dark/Light theme"},
     "short-description": "Computer Science Student",
     "about": "About",
     "about-description": "Hello, my name is Oseias Romeiro Magalhães, and I am currently pursuing a degree in Computer Science at UnB (University of Brasília). I have experience in Data Analysis and Database Administration. I also have skills in Software Development, Automation, and Cloud Environment. I am dedicated and committed to contributing to the creation of innovative solutions and the adoption of best practices in computing.",
     "xp": "Experiences",
     "xp-description": "<li><b>Fiverr</b>: As a freelancer on the Fiverr platform, I offer specialized services in Software Development and Databases, with a focus on Database Design and Modeling, Web Application Development, Programming Support, and API Integration with external services. My projects aim to provide customized and efficient solutions to meet clients' needs, focusing on process optimization and improving data system performance.</li><li><b>Regional Federal Court of the 1st Region</b>: At TRF1, I worked directly with the DBA team, providing technical support to the team and actively collaborating on data management and infrastructure projects. My responsibilities included developing and versioning scripts for process automation and database administration, as well as managing and monitoring servers. I was also responsible for automating repetitive tasks and processes using tools like Ansible and Airflow, in addition to developing internal solutions to optimize workflows and continuously improve the services provided.</li>",
-    "whatsapp-link": "I'm interested in knowing more about your profile."
+    "whatsapp-link": "I'm interested in knowing more about your profile.",
+    "thanking": "Thanks for help me to continue creating useful applications and collaborating with good practices in software development."
 }
