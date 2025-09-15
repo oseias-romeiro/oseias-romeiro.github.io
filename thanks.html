@@ -7,32 +7,90 @@
     <meta name="description" content="">
     <meta name="keywords" content="Oseias, Romeiro, Magalhaes, Magalhães, Oseias-Romeiro-Magalhaes, Oseias-Romeiro-Magalhães, Portfolio, Portfólio, Perfil, Projetos, Ciencias-da-Computacao, Ciências-da-Computação, Computacao, Computação, Software, Programador, Programacao, Programação, Desenvolvedor, Web, Mobile, Python, JavaScript, Java, Linux, Windows, Server, Automacao, Automação, Ansible, AWX, Banco-de-dados, DataBase, DB, BD, Administração, Integracao, Integração, Backend, Back-end, Cloud, Nuvem, API">
     <meta name="google-site-verification" content="_vJftw34mQuip4c-yM8RZ_ZuDTeuqfLvmSqk4VJjoMc" />
-    <title>Buy Me A Coffe</title>
+    <title>Thanks</title>
 
-    <link rel="shortcut icon" href="img/profile.jpeg" type="image/jpeg">
-
+    <link rel="shortcut icon" href="img/profile.png" type="image/jpeg">
+    <link rel="stylesheet" href="index.css">
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="flex flex-col h-screen justify-between bg-black text-white">
+<body class="flex flex-col h-screen justify-between">
 
-    <div class="flex flex-col items-center justify-center sm:pt-20 sm:pb-20 mt-5">
-        <h1 class="text-3xl sm:text-4xl">Oseias Romeiro</h1>
-        <a class="mb-3" href="/" style="color: rgb(157, 157, 235); text-decoration: underline;">home</a>
+    <div id="popup" class="fixed inset-0 z-50 bg-black/50 backdrop-blur-sm flex items-center justify-center">
+        <div class="bg-gradient-to-b from-gray-900/90 to-gray-800/80 dark:from-gray-900/90 dark:to-gray-800/80 light:from-white/90 light:to-gray-100/80 rounded-2xl shadow-2xl p-6 w-11/12 max-w-md relative">
+          
+            <button id="popup-closeBtn" class="absolute top-3 right-3 text-gray-400 hover:text-white transition">✕</button>
+
+            <h2 id="popup-title" class="text-xl font-semibold text-white dark:text-white light:text-gray-900 mb-3">Error</h2>
+            <p id="popup-message" class="text-gray-300 dark:text-gray-300 light:text-gray-700">This page needs Javascript to work properly!</p>
+        </div>
+    </div>
+
+    <div id="loading" class="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 z-50">
+        <img src="img/loading.gif" class="w-16 h-16 animate-pulse">
+    </div>
+
+    <nav class="p-4">
+        <div class="container mx-auto flex items-center">
+            <div class="font-bold text-2xl sm:text-4xl">Oseias Romeiro</div>
+            
+            <ul class="ml-4 pt-3 flex space-x-4 px-4">
+                <li><a id="navbar-item1" class="hover:text-blue-400" href="/"></a></li>
+                <li><a id="navbar-item2" class="hover:text-blue-400" href="#"></a></li>
+            </ul>
+
+            <div class="ml-auto p-2 bg-gray-900/50 backdrop-blur-md rounded-xl shadow-md hover:bg-gray-800/70 transition flex items-center space-x-3">
+                <button id="langToggle" class="w-8 h-8 group" lang-theme="">
+                    <img src="img/icons/translate.svg" alt="translate">
+                    <span id="tooltip-translate" class="absolute left-1/2 top-full mt-2 -translate-x-1/2 whitespace-nowrap px-2 py-1 text-sm rounded bg-gray-900 text-white shadow-lg opacity-0 scale-95 transform transition-all duration-150 pointer-events-none group-hover:opacity-100 group-hover:scale-100"></span>
+                </button>
+
+                <div class="w-px h-6 bg-gray-400"></div>
+                
+                <button id="themeToggle" data-theme="dark" class="w-8 h-8 group">
+                    <img src="" class="w-7 h-7">
+                    <span id="tooltip-theme" class="absolute left-1/2 top-full mt-2 -translate-x-1/2 whitespace-nowrap px-2 py-1 text-sm rounded bg-gray-900 text-white shadow-lg opacity-0 scale-95 transform transition-all duration-150 pointer-events-none group-hover:opacity-100 group-hover:scale-100"></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <div class="flex flex-col items-center justify-center pb-[10%]">
         
-        <img class="align-self-center ml-2" src="img/icons/celebrate.png" width="100" alt="celebrate image">
+        <img class="align-self-center mb-4" src="img/icons/celebrate.png" width="100" alt="celebrate image">
 
-        <p class="max-w-lg m-2 text-center">Thanks for help me to continue creating useful applications and collaborating with good practices in software development.</p>
+        <p id="thanking" class="max-w-lg m-2 text-center"></p>
 
-        <ul class="flex justify-center space-x-4 p-4 mt-4">
-            <li class="px-4"><a href="https://www.linkedin.com/in/oseias-romeiro"><img src="img/icons/linkedin.ico" alt="linkedin" class="w-10 h-10"></a></li>
-            <li class="px-4"><a href="https://www.github.com/oseias-romeiro"><img src="img/icons/github.png" alt="github" class="w-10 h-10 rounded-full"></a></li>
-            <li class="px-4"><a href="mailto:oseiasromeirom+gitio@gmail.com"><img src="img/icons/gmail.ico" alt="email" class="w-10 h-10"></a></li>
+        <ul class="flex justify-center space-x-4 p-4">
+            <li class="px-4 py-3 bg-gray-900/50 backdrop-blur-md rounded-xl shadow-md hover:bg-gray-800/70 transition">
+                <a href="https://www.linkedin.com/in/oseias-romeiro">
+                    <img src="img/icons/linkedin.svg" alt="linkedin" class="w-10 h-10">
+                </a>
+            </li>
+            <li class="px-4 py-3 bg-gray-900/50 backdrop-blur-md rounded-xl shadow-md hover:bg-gray-800/70 transition">
+                <a href="https://www.github.com/oseias-romeiro">
+                    <img src="img/icons/github.svg" alt="github" class="w-10 h-10 rounded-full">
+                </a>
+            </li>
+            <li class="px-4 py-3 bg-gray-900/50 backdrop-blur-md rounded-xl shadow-md hover:bg-gray-800/70 transition">
+                <a href="mailto:romeiro.osea+portfolio@gmail.com">
+                    <img src="img/icons/email.svg" alt="email" class="w-10 h-10">
+                </a>
+            </li>
+            <li class="px-4 py-3 bg-gray-900/50 backdrop-blur-md rounded-xl shadow-md hover:bg-gray-800/70 transition">
+                <a id="whatsapp-link">
+                    <img src="img/icons/whatsapp.svg" alt="whatsapp" class="w-10 h-10 cursor-pointer">
+                </a>
+            </li>
         </ul>
     </div>
 
     <span id="keywords" hidden="true">Oseias, Romeiro, Magalhaes, Magalhães, Oseias-Romeiro-Magalhaes, Oseias-Romeiro-Magalhães, Portfolio, Portfólio, Perfil, Projetos, Ciencias-da-Computacao, Ciências-da-Computação, Computacao, Computação, Software, Programador, Programacao, Programação, Desenvolvedor, Web, Mobile, Python, JavaScript, Java, Linux, Windows, Server, Automacao, Automação, Ansible, AWX, Banco-de-dados, DataBase, DB, BD, Administração, Integracao, Integração, Backend, Back-end, Cloud, Nuvem, API</span>
 
+    <script src="js/popup.js"></script>
+    <script src="js/cookies.js"></script>
     <script src="js/theme.js"></script>
-    
+    <script src="js/translate.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/whatsapp.js"></script>
 </body>
 </html>

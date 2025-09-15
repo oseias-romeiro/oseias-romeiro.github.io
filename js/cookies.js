@@ -1,12 +1,12 @@
 
-const setCookie = (name, value, days) => {
+const setCookie = (name, value, hours) => {
     let expires = "";
-    if (days) {
+    if (hours) {
         const date = new Date();
-        date.setTime(date.getTime() + (days*24*60*60*1000));
-        expires = "; expires=" + date.toUTCString();
+        date.setTime(date.getTime() + (hours*60*60*1000));
+        expires = `${date.toUTCString()}`;
     }
-    document.cookie = `${name}=${value || ""}${expires}; path=/`;
+    document.cookie = `${name}=${value || ""}; expires=${expires};  SameSite=Strict; path=/;`;
 };
 
 const getCookie = (name) => {

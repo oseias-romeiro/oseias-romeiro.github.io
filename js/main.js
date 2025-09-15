@@ -1,5 +1,4 @@
-
-document.getElementById("jsneedMSG").style.display = "none";
+hidePopUp();
 
 let lang = getCookie("lang");
 if (!lang) {
